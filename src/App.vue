@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-   <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <ul>
       <li>
         <router-link to="/">Home</router-link>
@@ -10,6 +10,7 @@
         <router-link to="/page">Page</router-link>
       </li>
     </ul>
+    <router-view name="Menu"/>
     <router-view></router-view>
 
 
@@ -17,12 +18,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //HelloWorld
   }
 }
 </script>
